@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Hosting;
@@ -66,6 +66,7 @@ namespace CreativeTim.Argon.DotNetCore.Free
                 // options.UseSqlServer(Configuration.GetConnectionString("MsSqlConnection"));
             });
 
+            
             services.AddDefaultIdentity<ApplicationUser>()
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
